@@ -23,17 +23,23 @@ function App() {
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display/>
-          <div className = "buttonContainer black">
-            <div className="red">
-              <Specials /> 
+        <Display />
+        <Numbers />
+        <Operators />
+          {/* <div className = "buttonContainer black"> */}
+            {/* <div className="red"> */}
+              {/* <Specials /> 
               <Numbers />
             </div>
-            <Operators />
-        </div>
+            <Operators /> */}
+            
+        {/* </div> */}
+        {/* <Specials /> */}
+
+        
       </div>
     </div>
   );
 }
 
-export default App;
+export default App
