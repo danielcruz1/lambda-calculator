@@ -6,13 +6,13 @@
     border: 2px solid grey;
     padding-bottom: 25px;
 }
-
+/* 
 .logo{
     margin-top: 15px;
     margin-left: 25px;
     margin-bottom: 5px;
     width: 50%;
-}
+} */
 
 .display {
     margin-top: 25px;
@@ -28,7 +28,7 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
-
+/* 
   .btn{
     width: 70px;
     height: 70px;
@@ -71,9 +71,9 @@
 
 .buttonContainer{
     display:flex;
-    /* width: 100px;
+    width: 100px;
     height: 100px;
-    border-radius:50%;*/
+    border-radius:50%;
     justify-content: space-between;
 
 } 
@@ -81,5 +81,5 @@
 .App{
     width: 400px;
     margin:0 auto;
-}
+} */
 
