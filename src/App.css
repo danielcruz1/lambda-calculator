@@ -6,6 +6,7 @@
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+
 .display {
     margin-top: 25px;
     height: 100px;
@@ -19,4 +20,81 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.logo-container {
+  margin-top: 30px;
+  margin-left: 28px;
+}
+
+div.buttons {
+  width: 494px;
+  margin: 30px auto;
+  display: flex;
+}
+
+div.left-block {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+div.right-block {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.operators {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 21.5px;
+}
+
+div.operators button {
+  background-color: #3cb5e5;
+}
+
+div.specials, 
+div.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.specials {
+  margin-bottom: 15px;
+}
+
+div.numbers {
+  flex-wrap: wrap;
+}
+
+button {
+  color: white;
+  border: 0;
+  font-size: 25px;
+  width: 86px;
+  border-radius: 50%;
+  height: 86px;
+  cursor: pointer;
+}
+
+div.specials button {
+    background-color: #1f61b1;
+    
+}
+
+div.numbers button {
+  background-color: #103c78;
+  flex-basis: 24.874%;
+  margin-right: 2px;
+  margin-bottom: 20px;
+}
+
+div.numbers button.zero {
+  flex-basis: 61.86%;
+  border-radius: 20px;
+}
