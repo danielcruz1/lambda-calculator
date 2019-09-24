@@ -1,13 +1,40 @@
 import React from "react";
 
-export default function NumberButton(props) {
+const NumberButton = props => {
+
+  const { setDisplay, display, number } = props;
+
+  const addNumberToDisplay = number => {
+    if (display === "0" && number !== ".") {
+      return setDisplay(`${number}`);
+    }
+
+    if (display.includes(".") && number === ".") {
+      return false;
+    }
+
+    return setDisplay(`${display}${number}`);
+  };
 
   return (
-    <button onClick ={() => props.setNumChar(props.buttonCharacters)}>
+    <React.Fragment>
       {/* Display a button element rendering the data being passed down from the parent container on props */}
-      {props.buttonCharacters}
-    </button>
+      {number !== "0" ? (
+        <button onClick={() => {
+            addNumberToDisplay(number);
+          }}>
+          {number}
+        </button>
+      ) : (
+        <button onClick={() => {
+          addNumberToDisplay(number);
+        }}
+        className="zero">
+        {number}
+      </button>
+      )}
+    </React.Fragment>
   );
+};
 
-}
- 
+export default NumberButton;

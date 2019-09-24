@@ -1,14 +1,26 @@
 import React from "react";
-import {specials} from "../../../data";
 
-const SpecialButton = () => {
+const SpecialButton = (props) => {
+
+  const { setDisplay, display, special } = props;
+
+  const handleClick = special => {
+    if (special === "C") {
+      return setDisplay("0");
+    }
+
+    return false;
+  };
+  
   return (
-    <div>
+    <React.Fragment>
       {/* Display a button element rendering the data being passed down from the parent container on props */}
-      {
-       specials.map(character => <SpecialButton character={character} /> )
-       }
-    </div>
+       <button onClick={() => {
+         handleClick(special);
+       }}>
+       {special}
+       </button>
+    </React.Fragment>
   );
 };
 
